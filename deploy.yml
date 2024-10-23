@@ -1,1 +1,10 @@
+name: My Workflow # Age in minutes
 
+on: [push] # Specify the events that trigger the workflow
+
+jobs:
+  my_job: # Define a job within the workflow
+    runs-on: ubuntu-latest # Specify the runner environment
+    steps:
+      - name: My Step # Define a step within the job
+        run: echo "Hello, world!" # Specify the command to run
